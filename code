@@ -1,0 +1,167 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string A = "1";
+            string B = "2";
+            string C = "3";
+            string D = "5";
+            string E = "5";
+            string F = "6";
+            string G = "7";
+            string H = "8";
+            string I = "9";
+            string turn = "player1";
+            string player1, player2, selection;
+
+
+            Console.Title = "Kolko i krzyzyk";
+            Console.WriteLine("Witaj w kolko i krzyzyk.");
+            Console.WriteLine("");
+            Console.WriteLine("Nacisnij przycisk aby kontynuowac.");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Podaj nazwe pierwszego gracza");
+            player1 = Console.ReadLine();
+            Console.WriteLine("Podaj nazwe drugiego gracza");
+            Console.ReadLine();
+            Console.Clear();
+
+            if (turn == "player1")
+            {
+                Console.Clear();
+                Console.WriteLine("Player: " + player1 + "'s turn!");
+                Console.WriteLine("");
+                //Plansza
+
+                Console.WriteLine(A + "┊" + B + "┊" + C);
+                Console.WriteLine(D + "┊" + E + "┊" + F);
+                Console.WriteLine(G + "┊" + H + "┊" + I);
+                Console.WriteLine("==================");
+                Console.WriteLine("Wybierz pole");
+                selection = Console.ReadLine();
+
+                if (selection == "1") 
+                {
+                    if (A == "1") 
+                    {
+                        A = "X";
+
+                    }
+
+
+                    else 
+                    {
+                        Console.WriteLine("To pole zostalo juz uzyte!");
+                    }
+                    
+
+                }
+                if (selection == "2") 
+                {
+                    if (B == "2") 
+                    {
+                        B = "X";
+                    }
+                        else
+                    {
+                        Console.WriteLine("To pole zostalo juz uzyte!");
+                    }
+
+                }
+                if (selection == "3") 
+                {
+                    if (C == "3") 
+                    {
+                        C = "X";
+                        }
+                    else
+                    {
+                        Console.WriteLine("To pole zostalo juz uzyte!");
+                    }
+
+                }
+
+                if (selection == "4")
+                {
+                    if (D == "4")
+                    {
+                        D = "X";
+                    }
+                    else
+                    {
+                        Console.WriteLine("To pole zostalo juz uzyte!");
+                    }
+
+                }
+                if (selection == "5")
+                {
+                    if (E == "5")
+                    {
+                        E = "X";
+                    }
+                    else
+                    {
+                        Console.WriteLine("To pole zostalo juz uzyte!");
+                    }
+
+                }
+                if (selection == "6")
+                {
+                    if (F == "6")
+                    {
+                        F = "X";
+                    }
+                    else
+                    {
+                        Console.WriteLine("To pole zostalo juz uzyte!");
+                    }
+
+                }
+                if (selection == "7")
+                {
+                    if (G == "7")
+                    {
+                        G = "X";
+                    }
+                    else
+                    {
+                        Console.WriteLine("To pole zostalo juz uzyte!");
+                    }
+
+                }
+                if (selection == "8")
+                {
+                    if (H == "8")
+                    {
+                        C = "X";
+                    }
+                    else
+                    {
+                        Console.WriteLine("To pole zostalo juz uzyte!");
+                    }
+
+                }
+                if (selection == "9")
+                {
+                    if (I == "9")
+                    {
+                        I = "X";
+                    }
+                    else
+                    {
+                        Console.WriteLine("To pole zostalo juz uzyte!");
+                    }
+
+                }
+            }
+
+
+
+        }
+    }
+}
